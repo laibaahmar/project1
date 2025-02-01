@@ -1,0 +1,10 @@
+# Allow all crawlers full access to the site
+User-agent: *
+Disallow:
+
+# Specify the location of your sitemap
+Sitemap: https://www.multitouchinterior.com/sitemap.xml
+
+# Block specific directories if necessary
+# Disallow: /admin/
+# Disallow: /private/

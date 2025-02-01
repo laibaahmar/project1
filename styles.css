@@ -1,0 +1,366 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: white;
+        }
+
+        header {
+            background: black;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        #welcome {
+            position: relative;
+            background: url('welcome-bg-2.jpg') no-repeat center center;
+            background-size: contain;
+            /* Adjust image to fit inside the container */
+            color: #fff;
+            text-align: center;
+            min-height: 100vh;
+            /* Ensure the container maintains full screen height */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding-bottom: 2rem;
+            overflow: hidden;
+            /* Prevents unwanted scrolling */
+        }
+
+        #welcome p {
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+
+        }
+
+        @media (max-width: 768px) {
+            #welcome {
+                min-height: 50vh;
+                /* Adjust height for smaller screens */
+                padding-bottom: 1rem;
+                /* Reduce padding */
+            }
+
+            #welcome p {
+                font-size: 1rem;
+                padding: 0rem 1rem;
+
+            }
+        }
+        
+        .welcome-section {
+            background-image: url('welcome-bg-2.jpg');
+            background-size: cover;
+            background-position: center;
+        }       
+
+
+
+
+        section {
+            padding: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        #about {
+            background: #f4f4f4;
+        }
+
+
+
+        .contact {
+            margin-top: 50px;
+            max-width: 600px;
+            margin: 0 auto;
+            /* Center horizontally */
+            padding: 1.5rem;
+            background-color: black;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            /* Center the contact section vertically in the viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* Take full viewport height */
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            /* Stack icon and text vertically */
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 0.5rem;
+            /* Add spacing between icon and text */
+        }
+
+        .contact-item span {
+            font-size: 1.2rem;
+            color: black;
+            text-align: center;
+        }
+
+        .contact-item a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        button {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        footer {
+            background: black;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #fff;
+            color: #fff;
+            border: 2px solid;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .floating-button:hover {
+            background-color: #555;
+        }
+
+        .floating-button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .floating-button.button1 {
+            right: 20px;
+
+            border-color: green;
+        }
+
+        .floating-button.button2 {
+            right: 20px;
+            bottom: 90px;
+            border-color: rgb(218, 23, 98);
+        }
+
+        .floating-button.button3 {
+            right: 20px;
+            bottom: 160px;
+            border-color: blue;
+        }
+
+        .floating-button.button4 {
+            right: 20px;
+            bottom: 230px;
+            border-color: rgb(24, 117, 248);
+        }
+
+
+
+
+
+
+
+        .services {
+            text-align: center;
+            background-color: #f4f4f4;
+            margin-top: 30px;
+        }
+
+        .services h2 {
+            font-size: 2rem;
+        }
+
+        /* Container for each horizontal group */
+        .image-text-group-horizontal {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            /* Align items at the top */
+            justify-content: flex-start;
+            /* No extra space between items */
+            gap: 1.3rem;
+            /* Space between images and text */
+            margin-bottom: 50px;
+            /* Space between rows */
+            margin-top: 50px;
+        }
+
+        /* Container for images */
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            /* Space between images */
+        }
+
+        /* Individual images */
+        .images img {
+            width: 12rem;
+            /* Adjust as needed */
+            height: auto;
+            border-radius: 0.3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagesl {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            /* Space between images */
+        }
+
+        /* Individual images */
+        .imagesl img {
+            width: 12rem;
+            /* Adjust as needed */
+            height: auto;
+            border-radius: 0.3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Text section */
+        .text {
+            margin-left: 1.3rem;
+            order: 2;
+        }
+
+        .textl {
+            margin-right: 1.3rem;
+        }
+
+        .image-text-group-horizontal h3 {
+            font-size: 1.5rem;
+
+            color: black;
+        }
+
+        .image-text-group-horizontal p {
+            max-width: 300px;
+            /* Limit the width of the text */
+            font-size: 1rem;
+            color: black;
+            /* Space between images and text */
+        }
+
+
+        @media (max-width: 768px) {
+            .services h2 {
+                font-size: 1.8rem;
+            }
+
+            .image-text-group-horizontal {
+                flex-direction: column;
+                /* Stack images and text vertically */
+                gap: 2rem;
+            }
+
+
+            .images {
+                order: 2;
+                justify-content: center;
+                /* Ensure images are centered */
+            }
+
+            .imagesl {
+
+                justify-content: center;
+                /* Ensure images are centered */
+            }
+
+            .image-text-group-horizontal h3,
+            .image-text-group-horizontal p {
+                text-align: center;
+                /* Center-align text on small screens */
+            }
+
+
+            .text {
+                order: 1;
+                margin: 0;
+                /* Remove extra margins */
+                text-align: center;
+                /* Center text for mobile */
+            }
+
+            .textl {
+                margin: 0;
+                /* Remove extra margins */
+                text-align: center;
+                /* Center text for mobile */
+            }
+
+            .images img {
+                width: 100%;
+                /* Adjust images to fit screen */
+                max-width: 300px;
+                /* Optional max width for consistency */
+            }
+
+            .imagesl img {
+                width: 100%;
+                /* Adjust images to fit screen */
+                max-width: 300px;
+                /* Optional max width for consistency */
+            }
+        }
+
+
+
+        .welcome p {
+            text-decoration-color: black;
+        }
