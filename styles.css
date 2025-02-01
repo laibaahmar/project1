@@ -1,3 +1,6 @@
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -30,10 +33,6 @@
             margin-left: 20px;
         }
         
-        nav ul li:first-child {
-            margin-left: 0; /* No margin on the first item */
-        }
-        
         nav ul li a {
             text-decoration: none;
             color: white;
@@ -42,6 +41,73 @@
         
         nav ul li a:hover {
             color: gray; /* Optional: color change on hover */
+        }
+
+        /* Hamburger icon styling */
+        .hamburger-icon {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger-icon .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+
+        /* Mobile View */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none; /* Hide menu by default on mobile */
+                width: 100%;
+                position: absolute;
+                top: 20px;
+                left: 0;
+                background-color: black;
+                text-align: center;
+                padding: 1rem 0;
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            #hamburger {
+                display: flex; /* Show hamburger icon on small screens */
+            }
+
+            nav ul.active {
+                display: flex; /* Show menu when it's active */
+            }
+        }
+
+        #hamburger.active {
+            background-color: #333;
+        }
+
+        #hamburger.active .bar {
+            background-color: #bbb;
+        }
+
+        #hamburger.active .bar:nth-child(1) {
+            transform: rotate(45deg); /* Rotate first bar */
+        }
+
+        #hamburger.active .bar:nth-child(2) {
+            opacity: 0; /* Hide the middle bar */
+        }
+
+        #hamburger.active .bar:nth-child(3) {
+            transform: rotate(-45deg); /* Rotate third bar */
+        }
+
+        /* Additional content styling */
+        .services {
+            text-align: center;
         }
 
         #welcome {
