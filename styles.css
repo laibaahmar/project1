@@ -112,7 +112,7 @@
 
         #welcome {
             position: relative;
-            background: url('welcome-bg-2.jpg') no-repeat center center;
+            background: url('welcome-bg-2.webp') no-repeat center center;
             background-size: cover;
             background-position: center;
             /* Adjust image to fit inside the container */
@@ -152,7 +152,7 @@
         }
         
         .welcome-section {
-            background-image: url('welcome-bg-2.jpg');
+            background-image: url('welcome-bg-2.webp');
             background-size: cover;
             background-position: center;
         }       
